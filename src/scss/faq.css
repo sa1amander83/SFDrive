@@ -1532,7 +1532,16 @@ button:not(.active) {
   }
 }
 
-button.active, button:focus {
+button:focus {
+  background: rgba(97, 161, 153, 0.15);
+}
+@media (min-width: 1200px) {
+  button:focus {
+    background: rgba(97, 161, 153, 0.15);
+  }
+}
+
+button.active {
   background: rgba(97, 161, 153, 0.15);
   border-radius: 6px;
   font-family: Roboto;
@@ -1546,7 +1555,7 @@ button.active, button:focus {
   transition: all 0.3s ease-out;
 }
 @media (min-width: 1200px) {
-  button.active, button:focus {
+  button.active {
     background: rgba(97, 161, 153, 0.15);
     white-space: nowrap;
     /* Text M */
