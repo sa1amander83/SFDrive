@@ -1,4 +1,4 @@
-//sass --watch src/scss/style.scss:src/css/style.css
+//sass --watch src/scss/faq.scss:src/css/faq.css
 //"dev": "node app.js",
 //browser-sync start --server --files "css/*.css, *.html, js/*.js"
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
@@ -208,13 +208,18 @@ button:not(.active){
   @include xl{
     border:none;
     transition: all 0.3s ease-out;
-
     background: #F7F7F8;
  }
 }
 
+button:focus {
+  background: rgba(97, 161, 153, 0.15);
+  @include xl {
+    background: rgba(97, 161, 153, 0.15);
+  }
+}
 
-button.active, button:focus {
+button.active  {
   background: rgba(97, 161, 153, 0.15);
   border-radius: 6px;
   font-family: Roboto;
